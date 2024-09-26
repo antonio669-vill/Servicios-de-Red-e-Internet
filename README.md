@@ -6,3 +6,9 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 |---|---|
 |Ejercicio 1   |   |
 |Ejercicio 2   |   |
+
+## Tema 1 - Actividad de introducción
+|Nº de ejercicio  |Descripción   |
+|---|---|
+|Ejercicio 1   |   |
+|Ejercicio 2   |   |
