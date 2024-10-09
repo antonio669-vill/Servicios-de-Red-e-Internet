@@ -1,6 +1,5 @@
-# ```diff
-+ Actividad de presentación de la asignatura `#f03c15`
-```
+
+# Actividad de presentación de la asignatura `#f03c15`
 # Actividad de presentación de la asignatura `#f03c15`
 # Visualiza los siguientes videos y responde a las cuestiones planteadas a continuación
 
@@ -9,9 +8,9 @@
 ## https://www.youtube.com/watch?v=DuSURHrZG6I
 
 ### ¿Quién, dónde y cuándo se crea el primer servidor web?
-
-El primer servidor del mundo se creó en Ginebra,Suiza, entre 1989 y 1991 por Tim Berners-Lee con ayuda de Robert Cailliau, fue conocido como NeXTcube. 
-
+ ```diff
+- El primer servidor del mundo se creó en Ginebra,Suiza, entre 1989 y 1991 por Tim Berners-Lee con ayuda de Robert Cailliau, fue conocido como NeXTcube. 
+```
 ### ¿Qué es pila de protocolos usados por http?
 
 Son TCP e IP.
