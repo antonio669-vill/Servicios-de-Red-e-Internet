@@ -30,7 +30,7 @@ Las páginas estáticas se mantienen iguales par todos los usuarios, sin embargo
 ### (solución en actividad 0.3)
 
 Abrimos el cmd de Windows y escribimos telnet (el servidor) (y el puerto).
-<br>
+
 ### Request. Métodos principales
 
 Get
@@ -43,52 +43,34 @@ Patch
 Options
 Trace
 
-Response. Códigos
+### Response. Códigos
 
 100 - Respuesta de que se ha recibido la petición
 200 - Not error
 300 - redirección
 400 - error del cliente
 500 - error del servidor
-	
-Content type. Tipos principales
-	
-	text/html
-	
-	
 
+### Content type. Tipos principales
+text/html
+## Actividad 0.2 - UDP and TCP: Comparison of Transport Protocols
+## https://www.youtube.com/watch?v=Vdc8TCESIg8
 
-	
-	
+### Diferencias entre udp y tcp? (min 2:46 y 4:15)
 
-
-Actividad 0.2 - UDP and TCP: Comparison of Transport Protocols
-https://www.youtube.com/watch?v=Vdc8TCESIg8
-
-Diferencias entre udp y tcp? (min 2:46 y 4:15)
-
-¿Qué aplicaciones usan tcp?  http, smtp, pop, imap, ssh?
-
+### ¿Qué aplicaciones usan tcp?  http, smtp, pop, imap, ssh?
 Telnet
-¿Qué aplicaciones usan udp?
-
+### ¿Qué aplicaciones usan udp?
 TFTP
 DNS
 RPC
 NCS
 SNMP
-
-
-¿Qué capa almacena el puerto?
-
+### ¿Qué capa almacena el puerto?
 La capa de transporte.
-
-
-¿Qué capa almacena la dirección IP?
-
+### ¿Qué capa almacena la dirección IP?
 La capa de red (también conocida como capa de internet).
-
-¿Qué es three-way handshake?
+### ¿Qué es three-way handshake?
 Proceso que se utiliza en una red TCP/IP para establecer una conexión entre el servidor y el cliente. Es un proceso de tres pasos que requiere que tanto el cliente como el servidor intercambién paquetes sync de sincronización y reconocimiento antes de que comience el proceso real de comunicación de datos.
 
 
