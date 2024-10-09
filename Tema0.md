@@ -20,14 +20,14 @@ Una URL está compuesta de un protocolo, seguido del dominio de la página que b
 
 ### ¿Pasos en la recuperación de una página web mediante HTTP?
 
-	El cliente pide una función como podría ser “Get” junto con los elementos vistos en la pregunta anterior al servidor a través de internet, este en cuestión de segundos le devuelve al usuario la respuesta para poder acceder a la página que ha pedido.
+El cliente pide una función como podría ser “Get” junto con los elementos vistos en la pregunta anterior al servidor a través de internet, este en cuestión de segundos le devuelve al usuario la respuesta para poder acceder a la página que ha pedido.
 
 ### Diferencia entre páginas dinámicas y estáticas
 
-	Las páginas estáticas se mantienen iguales par todos los usuarios, sin embargo las páginas dinámicas varían en determinados aspectos en función de quién sea el usuario que en la página, la ubicación dentro de la propia página o los cambios a tiempo real que hacen sus creadores, un ejemplo de estas últimas son las redes sociales.
+Las páginas estáticas se mantienen iguales par todos los usuarios, sin embargo las páginas dinámicas varían en determinados aspectos en función de quién sea el usuario que en la página, la ubicación dentro de la propia página o los cambios a tiempo real que hacen sus creadores, un ejemplo de estas últimas son las redes sociales.
 
-¿Cómo usar telnet para acceder a un servidor web?
-	(solución en actividad 0.3)
+### ¿Cómo usar telnet para acceder a un servidor web?
+### (solución en actividad 0.3)
 
 Abrimos el cmd de Windows y escribimos telnet (el servidor) (y el puerto).
 
@@ -36,7 +36,7 @@ Abrimos el cmd de Windows y escribimos telnet (el servidor) (y el puerto).
 
 
 
-Request. Métodos principales
+### Request. Métodos principales
 
 Get
 Head
