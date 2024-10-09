@@ -9,7 +9,7 @@
 
 ### ¿Quién, dónde y cuándo se crea el primer servidor web?
  ```diff
-- El primer servidor del mundo se creó en Ginebra,Suiza, entre 1989 y 1991 por Tim Berners-Lee con ayuda de Robert Cailliau, fue conocido como NeXTcube. 
++ El primer servidor del mundo se creó en Ginebra,Suiza, entre 1989 y 1991 por Tim Berners-Lee con ayuda de Robert Cailliau, fue conocido como NeXTcube. 
 ```
 ### ¿Qué es pila de protocolos usados por http?
 
