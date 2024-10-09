@@ -30,12 +30,7 @@ Las páginas estáticas se mantienen iguales par todos los usuarios, sin embargo
 ### (solución en actividad 0.3)
 
 Abrimos el cmd de Windows y escribimos telnet (el servidor) (y el puerto).
-
-
-
-
-
-
+<br>
 ### Request. Métodos principales
 
 Get
