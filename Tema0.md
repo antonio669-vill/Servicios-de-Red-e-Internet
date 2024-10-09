@@ -72,10 +72,7 @@ La capa de transporte.
 ### ¿Qué capa almacena la dirección IP?
 La capa de red (también conocida como capa de internet).
 ### ¿Qué es three-way handshake?
-Proceso que se utiliza en una red TCP/IP para establecer una conexión entre el servidor y el cliente. Es un proceso de tres pasos que requiere que tanto el cliente como el servidor intercambién paquetes sync de sincronización y reconocimiento antes de que comience el proceso real de comunicación de datos.
-
-
-Este proceso ayuda a iniciar, negociar y separar conexiones de socket TCP al mismo tiempo.
+Proceso que se utiliza en una red TCP/IP para establecer una conexión entre el servidor y el cliente. Es un proceso de tres pasos que requiere que tanto el cliente como el servidor intercambién paquetes sync de sincronización y reconocimiento antes de que comience el proceso real de comunicación de datos. Este proceso ayuda a iniciar, negociar y separar conexiones de socket TCP al mismo tiempo.
 
 
 
@@ -84,42 +81,39 @@ Este proceso ayuda a iniciar, negociar y separar conexiones de socket TCP al mis
 
 
 
-Actividad 0.3 - Práctica telnet/http
-https://www.youtube.com/watch?v=xpBpGC08f4Q&t=189s
-http://www.profesordeinformatica.com/servicios/http/telnet
-Lee el artículo y prueba los ejemplos sugeridos en él.
+## Actividad 0.3 - Práctica telnet/http
+## https://www.youtube.com/watch?v=xpBpGC08f4Q&t=189s
+## http://www.profesordeinformatica.com/servicios/http/telnet
+## Lee el artículo y prueba los ejemplos sugeridos en él.
 
-Nota: Si usamos Windows 10, tenemos que activar “telnet”
-http://www.lawebdelprogramador.com/foros/Windows-10/1510815-Como-activar-Telnet-en-Windows-10.html
-
-
-Actividad 0.4 - Usando cUrl
-https://curl.se/docs/manual.html
-
-Busca información sobre el comando curl y muestra al menos cinco ejemplos de uso
+### Nota: Si usamos Windows 10, tenemos que activar “telnet”
+### http://www.lawebdelprogramador.com/foros/Windows-10/1510815-Como-activar-Telnet-en-Windows-10.html
 
 
+## Actividad 0.4 - Usando cUrl
+## https://curl.se/docs/manual.html
 
-Actividad 0.5 - Práctica servidor web
-Visita los siguientes enlaces:
-Simple web server (ejemplo 1)
-https://docs.python.org/3/library/http.server.html
-python -m http.server 8000
-http server (ejemplo 2)
-https://github.com/python/cpython/blob/main/Lib/http/server.py
-dummy web server (ejemplo 3)
-https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff
+### Busca información sobre el comando curl y muestra al menos cinco ejemplos de uso
+
+## Actividad 0.5 - Práctica servidor web
+## Visita los siguientes enlaces:
+## Simple web server (ejemplo 1)
+## https://docs.python.org/3/library/http.server.html
+## python -m http.server 8000
+## http server (ejemplo 2)
+## https://github.com/python/cpython/blob/main/Lib/http/server.py
+## dummy web server (ejemplo 3)
+## https://gist.github.com/kabinpokhrel/6fd1275603e9d5f1e284be717cbd1bff
 
 
-Instala Python.
-Ejecuta los ejemplos mostrados con anterioridad.
-Publica en GitHub los ejemplos llevados a cabo. Los ejemplos se acompañaran con capturas de pantalla en las que se muestre su funcionamiento.
+### Instala Python.
+### Ejecuta los ejemplos mostrados con anterioridad.
+### Publica en GitHub los ejemplos llevados a cabo. Los ejemplos se acompañaran con capturas de pantalla en las que se muestre su funcionamiento.
 
 
-Actividad 0.5. Repositorio Github
+## Actividad 0.5. Repositorio Github
 
-Crea una cuenta en Github, si no la tienes ya. Crea un repositorio en Github con el nombre del módulo. El repositorio incluirá una carpeta para cada tema: “Tema0”, “Tema1”,... “TemaN” en el que incluirás las actividades que se te indiquen expresamente.
-El repositorio incluirá un archivo “README” en el que se enlazaran la solución a los ejercicios incluidos en las carpetas anteriores.
+### Crea una cuenta en Github, si no la tienes ya. Crea un repositorio en Github con el nombre del módulo. El repositorio incluirá una carpeta para cada tema: “Tema0”, “Tema1”,... “TemaN” en el que incluirás las actividades que se te indiquen expresamente. El repositorio incluirá un archivo “README” en el que se enlazaran la solución a los ejercicios incluidos en las carpetas anteriores.
 
 La página README del repositorio debe tener un aspecto parecido al mostrado a continuaciçon:
 
