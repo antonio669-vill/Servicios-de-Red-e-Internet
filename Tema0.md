@@ -1,5 +1,5 @@
-```diff
-## + Actividad de presentación de la asignatura `#f03c15`
+# ```diff
++ Actividad de presentación de la asignatura `#f03c15`
 ```
 # Actividad de presentación de la asignatura `#f03c15`
 # Visualiza los siguientes videos y responde a las cuestiones planteadas a continuación
