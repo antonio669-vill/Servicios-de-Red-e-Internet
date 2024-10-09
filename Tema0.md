@@ -1,5 +1,5 @@
 ```diff
-+ Green
++ Gree
 - Red
 ! Orange
 @@ Pink @@
