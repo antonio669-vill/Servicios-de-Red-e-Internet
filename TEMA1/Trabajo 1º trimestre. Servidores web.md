@@ -267,7 +267,5 @@ sudo nano /etc/php/8.1/fpm/php.ini
 ````
 cgi.fix_pathinfo=0
 ````
+Deberíamos ver esto:
 <img src="../TEMA1/Imágenes/AA.png"/>
-
-Reiniciamos el servicio de PHP-FPM:
-sudo service php8.1-fpm restart
