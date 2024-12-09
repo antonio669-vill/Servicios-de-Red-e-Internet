@@ -84,16 +84,35 @@ sudo a2ensite wordpress
 ````
 sudo nano /etc/hosts
 ````
+4. Por último recargaremos Apache con "sudo service Apache2 reload"
 
-<img src="../Practica 1º Trimestre/rsc/img/hosts.png" alt="index" width="570"/>
+### La base de datos
+1. Accedemos a MySQL como administradrores con:
+
+````
+sudo mysql -u root
+````
+
+2. Creamos nuestra base datos poniendo "CREATE DATABASE" y el nombre que le querramos poner
+````
+CREATE DATABASE Wordpress;
+````
+3. Ahora tendremos que crear un usuario admininistrador y le asignamos los privilegios a dicho usuario
+
+````
+CREATE USER 'admin'@'localhost'  IDENTIFIED  BY 'admin';
+````
+````
+GRANT ALL PRIVILEGES -> ON wordpress.* -> TO 'admin'@'localhost';
+````
+
+( Es importante actualizar los privilegios de nuestra base de datos con: "FLUSH PRIVILEGES;")
+
+4. Cerramos la sesión de MySQL con "quit"
 
 
 <br>
 
-6. Recargamos Apache
+<img src="../TEMA1/Imágenes/con.png" alt="index" width="570"/>
 
 <br>
-
-````
-sudo service Apache2 reload
-````
