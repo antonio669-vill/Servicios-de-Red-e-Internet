@@ -30,6 +30,6 @@ https://localhost
 Si hemos seguido los pasos habremos instalado correctamente Apache2 para Ubuntu
 <br>
 
-<img src="../Tema 1/rsc/img/apachecinstall1.png" alt="index" width="570"/>
+<img src="" alt="index" width="570"/>
 
 <br>
