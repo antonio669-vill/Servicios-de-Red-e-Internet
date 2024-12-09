@@ -128,18 +128,10 @@ sudo -u www-data nano /srv/www/Wordpress/wp-config.php
 
 <img src="../TEMA1/Imágenes/IDIOMA.png"/>
 
-<img src="../TEMA1/Imágenes/HOLA.png/>
+<img src="../TEMA1/Imágenes/HOLA.png"/>
 
-(En)
+(Se recomienda que el usuario sea "admin")
 
-Habremos finalizado la configuración básica de Wordpress.
+2. Si todo ha salido bién, veremos lo siguiente:
 
-<img src="../Practica 1º Trimestre/rsc/img/wordpress4.png" alt="index" width="570"/>
-
-Accedemos a la página de inicio de Wordpress e ingresamos con nuestras credenciales.
-
-<img src="../Practica 1º Trimestre/rsc/img/wordpress5.png" alt="index" width="570"/>
-
-Finalmente comprobamos el correcto funcionamiento de Wordpress.
-
-<img src="../Practica 1º Trimestre/rsc/img/wordpress6.png" alt="index" width="570"/>
+<img src="../TEMA1/Imágenes/BIENVENIDO.png"/>
