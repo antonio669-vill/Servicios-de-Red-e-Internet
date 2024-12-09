@@ -110,9 +110,16 @@ GRANT ALL PRIVILEGES -> ON wordpress.* -> TO 'admin'@'localhost';
 
 4. Cerramos la sesión de MySQL con "quit"
 
-
 <br>
-
 <img src="../TEMA1/Imágenes/con.png" alt="index" width="570"/>
-
 <br>
+
+### Conexión Wordpress/DB
+
+1. Primero deberemos modificando el archivo de configuración de WordPress que viene por defecto para que se conecte a la base de datos:
+
+````
+sudo -u www-data nano /srv/www/Wordpress/wp-config.php
+````
+
+2. Una vez dentro sustituiremos cada punto con el nuestro (en "NAME" pondremos el nombre de nustra base de datos y así sucesivamente).
