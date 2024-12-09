@@ -1,15 +1,36 @@
-Abrimos una terminal
+## Instalación del servidor web Apache
 
-Actualizamos los paquetes instalados
+### Instalación de Apache en Ubuntu
 
+1. Abrimos una terminal
+
+2. Actualizamos los paquetes instalados
+`````
 sudo apt update
-Instalamos las nuevas versiones
+`````
+3. Instalamos las nuevas versiones
+````
 sudo apt upgrade
-Instalamos el paquete de Apache
+````
+4. Instalamos el paquete de Apache
+`````
 sudo apt install apache2
-Ajustamos el Firewall para Apache con los siguientes dos comandos:
+`````
+5. Ajustamos el Firewall para Apache con los siguientes dos comandos:
+`````
 sudo ufw app list
+`````
+`````
 sudo ufw allow "Apache"
-Comprobar en nuestro navegador la siguiente dirección
+`````
+6. Comprobar en nuestro navegador la siguiente dirección
+````
 https://localhost
+````
 Si hemos seguido los pasos habremos instalado correctamente Apache2 para Ubuntu
+<br>
+
+<img src="../Tema 1/rsc/img/apachecinstall1.png" alt="index" width="570"/>
+
+<br>
+
