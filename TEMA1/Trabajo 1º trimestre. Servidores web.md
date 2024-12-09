@@ -276,10 +276,7 @@ Deberíamos ver esto:
 sudo apt-get install phpmyadmin
 ````
 2. Se abrirá esta ventana donde deberemos elegir "apache2":
-<img src="../TEMA1/Imágenes/AA.png"/>
+<img src="../TEMA1/Imágenes/apap.png"/>
 
-Posteriormente ingresamos la contraseña que habriamos establecido en el paso de instalación de MySQL
-
-
-Incluimos en la carpeta de nuestro dominio los archivos de PHPmyAdmin:
-sudo ln -s /usr/share/phpmyadmin /var/www/server2/
+3. Debemos añadir en la carpeta de nuestro dominio los archivos PHPmyAdmin (sudo ln -s /usr/share/phpmyadmin /var/www/server2/) para, por fin, poder usarlo:
+<img src="../TEMA1/Imágenes/sql.png"/>
