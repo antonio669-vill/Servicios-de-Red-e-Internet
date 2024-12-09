@@ -1,0 +1,15 @@
+Abrimos una terminal
+
+Actualizamos los paquetes instalados
+
+sudo apt update
+Instalamos las nuevas versiones
+sudo apt upgrade
+Instalamos el paquete de Apache
+sudo apt install apache2
+Ajustamos el Firewall para Apache con los siguientes dos comandos:
+sudo ufw app list
+sudo ufw allow "Apache"
+Comprobar en nuestro navegador la siguiente dirección
+https://localhost
+Si hemos seguido los pasos habremos instalado correctamente Apache2 para Ubuntu
