@@ -123,3 +123,23 @@ sudo -u www-data nano /srv/www/Wordpress/wp-config.php
 ````
 
 2. Una vez dentro sustituiremos cada punto con el nuestro (en "NAME" pondremos el nombre de nustra base de datos y así sucesivamente).
+### Wordpress
+1. Empezamos con la configuración del propio Wordpress eligiendo el idioma y otros parametros que veremos más adelante:
+
+<img src="../TEMA1/Imágenes/IDIOMA.png"/>
+
+<img src="../TEMA1/Imágenes/HOLA.png/>
+
+(En)
+
+Habremos finalizado la configuración básica de Wordpress.
+
+<img src="../Practica 1º Trimestre/rsc/img/wordpress4.png" alt="index" width="570"/>
+
+Accedemos a la página de inicio de Wordpress e ingresamos con nuestras credenciales.
+
+<img src="../Practica 1º Trimestre/rsc/img/wordpress5.png" alt="index" width="570"/>
+
+Finalmente comprobamos el correcto funcionamiento de Wordpress.
+
+<img src="../Practica 1º Trimestre/rsc/img/wordpress6.png" alt="index" width="570"/>
