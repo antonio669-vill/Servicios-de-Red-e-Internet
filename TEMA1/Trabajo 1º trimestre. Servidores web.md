@@ -4,7 +4,7 @@
 1. Abrimos una terminal en Linux
 
 <br>
-<img src="../TEMA1/Imágenes/cmd.png"/>
+<img src="../TEMA1/Imágenes/CMD.png"/>
 <br>
 
 2. Actualizamos los paquetes instalados
