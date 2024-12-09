@@ -37,3 +37,27 @@ sudo ufw allow "Apache"
 `````
 sudo apt install mysql-server
 `````
+### Instalaremos Wordpress
+1. Instalamos, primero, "unzip" con:
+
+````
+sudo unzip latest.zip
+````
+
+2. Luego descargaremos el archivo de instalación de Wordpress con el comando de abajo Y extraemos los archivos con el "unzip" instalado anteriormente.
+
+````
+wget https://es.wordpress.org/latest.zip
+````
+
+3. Ahora deberemos poner los contenidos de Wordpress a nuestra carpeta del dominio
+
+````
+sudo mv wordpress/* /var/www/html/
+````
+
+4. Por último modificaremos le concederemos permisos a la carpeta:
+
+````
+sudo chown -R www-data:www-data /var/www/html/*
+````
