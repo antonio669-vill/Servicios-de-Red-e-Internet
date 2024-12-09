@@ -255,3 +255,19 @@ Por último activamos la web con:
 sudo ln -s /etc/nginx/sites-available/servidor2.centro.intranet /etc/nginx/sites-enabled/
 ````
 <img src="../TEMA1/Imágenes/ng.png"/>
+
+### PHP
+1. Instalamos PHP y configuramos "PHP-FPM":
+````
+sudo apt install php-fpm php-mysql php-mbstring php-zip php-gd php-json php-curl -y
+````
+````
+sudo nano /etc/php/8.1/fpm/php.ini
+````
+````
+cgi.fix_pathinfo=0
+````
+<img src="../TEMA1/Imágenes/AA.png"/>
+
+Reiniciamos el servicio de PHP-FPM:
+sudo service php8.1-fpm restart
