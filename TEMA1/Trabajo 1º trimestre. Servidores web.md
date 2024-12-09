@@ -63,7 +63,7 @@ sudo chown -R www-data:www-data /var/www/html/*
 ````
 ### Configuración para Wordpress
 
-1. Creamos un archivo para configuración con "sudo nano /etc/apache2/sites-available/wordpress.conf":
+1. Creamos un archivo para configuración con "sudo nano /etc/apache2/sites-available/wordpress.conf" y escribimos:
 
 ````
 <VirtualHost *:80>
@@ -73,29 +73,13 @@ sudo chown -R www-data:www-data /var/www/html/*
 </VirtualHost>
 ````
 
-3. Habilitamos la página de Wordpress
-
-<br>
+2. Habilitaremos la página de Wordpress escribiendo
 
 ````
 sudo a2ensite wordpress
 ````
 
-<br>
-
-4. Deshabilitamos la página por defecto de Apache
-
-<br>
-
-````
-sudo a2dissite 000-default
-````
-
-<br>
-
-5. Añadimos el dominio al fichero hosts
-
-<br>
+3. Deshabilitamos la página por defecto de Apache con "sudo a2dissite 000-default" y añadimos el dominio al fichero hosts:
 
 ````
 sudo nano /etc/hosts
