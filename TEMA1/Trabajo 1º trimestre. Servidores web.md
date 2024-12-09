@@ -68,7 +68,7 @@ sudo chown -R www-data:www-data /var/www/html/*
 ````
 <VirtualHost *:80>
     DocumentRoot /var/www/html
-    ServerName wordpress.local
+    ServerName Wordpress.local
     ServerAdmin admin@localhost
 </VirtualHost>
 ````
@@ -111,7 +111,7 @@ GRANT ALL PRIVILEGES -> ON wordpress.* -> TO 'admin'@'localhost';
 4. Cerramos la sesión de MySQL con "quit"
 
 <br>
-<img src="../TEMA1/Imágenes/con.png" alt="index" width="570"/>
+<img src="../TEMA1/Imágenes/con.png"/>
 <br>
 
 ### Conexión Wordpress/DB
