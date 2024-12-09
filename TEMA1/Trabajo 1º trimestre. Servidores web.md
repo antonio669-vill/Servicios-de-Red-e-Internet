@@ -33,8 +33,7 @@ sudo ufw allow "Apache"
 <br>
 
 ### Instalación de MySQL
-1. Abrimos una terminal en Linux de nuevo
-2. Ahora instalaremos MySQL de la siguiente forma:
+1. Abrimos una terminal en Linux de nuevo e instalaremos MySQL de la siguiente forma:
 `````
 sudo apt install mysql-server
 `````
