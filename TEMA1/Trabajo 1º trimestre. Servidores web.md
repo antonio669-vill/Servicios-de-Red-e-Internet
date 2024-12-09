@@ -37,6 +37,10 @@ sudo ufw allow "Apache"
 `````
 sudo apt install mysql-server
 `````
+Deberemos, también, configurar MySQLServer:
+`````
+sudo mysql_secure_installation
+`````
 ### Instalaremos Wordpress
 1. Instalamos, primero, "unzip" con:
 
@@ -240,7 +244,7 @@ server {
     }
 }
 ````
-4. Configuraremos el host:
+4. Configuraremos adecuadamente el host:
 ````
 111.111.111.111 servidor2.centro.intranet
 ````
