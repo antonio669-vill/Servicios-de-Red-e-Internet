@@ -61,7 +61,7 @@ sudo mv wordpress/* /var/www/html/
 ````
 sudo chown -R www-data:www-data /var/www/html/*
 ````
-### Configuración para Wordpress
+### Preparando Wordpress
 
 1. Creamos un archivo para configuración con "sudo nano /etc/apache2/sites-available/wordpress.conf" y escribimos:
 
@@ -85,6 +85,19 @@ sudo a2ensite wordpress
 sudo nano /etc/hosts
 ````
 4. Por último recargaremos Apache con "sudo service Apache2 reload"
+
+### Wordpress
+1. Empezamos con la configuración del propio Wordpress eligiendo el idioma y otros parametros que veremos más adelante:
+
+<img src="../TEMA1/Imágenes/IDIOMA.png"/>
+
+<img src="../TEMA1/Imágenes/HOLA.png"/>
+
+(Se recomienda que el usuario sea "admin")
+
+2. Si todo ha salido bién, veremos lo siguiente:
+
+<img src="../TEMA1/Imágenes/BIENVENIDO.png"/>
 
 ### La base de datos
 1. Accedemos a MySQL como administradrores con:
@@ -123,15 +136,61 @@ sudo -u www-data nano /srv/www/Wordpress/wp-config.php
 ````
 
 2. Una vez dentro sustituiremos cada punto con el nuestro (en "NAME" pondremos el nombre de nustra base de datos y así sucesivamente).
-### Wordpress
-1. Empezamos con la configuración del propio Wordpress eligiendo el idioma y otros parametros que veremos más adelante:
 
-<img src="../TEMA1/Imágenes/IDIOMA.png"/>
+### WSGI
 
-<img src="../TEMA1/Imágenes/HOLA.png"/>
+1. Instalaremos Python escribiendo este comando en el CPD de Linux y posteriormente instalaremos "WSGI":
+````
+sudo apt install python3 libexpat1 -y
+````
+````
+sudo apt install libapache2-mod-wsgi-py3 -y
+````
+2. Para comprobar que funciona escribiremos "sudo nano /var/www/html/wsgi_a.py" y escribimos dentro lo siguiente:
+````Python
+def application(environ, start_response):
+    status = '200 OK'
+    output = b'Hello !\n'
 
-(Se recomienda que el usuario sea "admin")
+    response_headers = [
+        ('Content-type', 'text/plain'),
+        ('Content-Length', str(len(output)))
+    ]
 
-2. Si todo ha salido bién, veremos lo siguiente:
+    start_response(status, response_headers)
+    return [output]
+````
+3. Es importante que en el archivo de nuestro virtualhost tendremos que escribir"WSGIScriptAlias / /var/www/html/wsgitest.py" para asegurarnos de que podemos usar Python
 
-<img src="../TEMA1/Imágenes/BIENVENIDO.png"/>
+(No olvidarnos de ahora en el dominio habra que poner al final "WSGI")
+
+### AWSTAT
+1. Instalamos AWSTAT mediante el siguiente comando "sudo apt-get install awstats" y habilitamos el módulo CGI con:
+
+````
+sudo a2enmod cgi alias
+````
+(Debemos reiniciar Apache)
+
+2. Ahora deberemos duplicar el archivo AWSTAT y editarlo:
+````
+sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.Nombre-Dominio.conf
+````
+
+````
+sudo nano /etc/awstats/awstats.Nombre-Dominio.conf
+LogFile="/var/log/apache2/access.log"
+SiteDomain="Dominio.com"
+HostAliases="www.Dominio.com localhost 127.0.0.1"
+````
+3. Para generar las estadísticas con esta herramienta deberemos escribir este código:
+
+````
+sudo /usr/lib/cgi-bin/awstats.pl -config=Nombre-Dominio -update
+````
+4. Y generamos un index para las de estadisticas:
+````
+sudo /usr/lib/cgi-bin/awstats.pl -config=Dominio.com -output > /var/www/html/index.html
+````
+5. Se vería algo así:
+<img src="../TEMA1/Imágenes/STAT.png"/>
