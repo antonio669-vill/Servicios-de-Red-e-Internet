@@ -7,30 +7,26 @@
 <img src="../TEMA1/Imágenes/CMD.png"/>
 <br>
 
-2. Actualizamos los paquetes instalados
+2. Actualizamos los paquetes instalados e instalamos las nuevas versiones
 `````
 sudo apt update
 `````
-3. Instalamos las nuevas versiones
+
 ````
 sudo apt upgrade
 ````
-4. Instalamos el paquete de Apache
+3. Ahora instalaremos Apache de forma adecuada haciendo lo siguiente:
 `````
 sudo apt install apache2
 `````
-5. Ajustamos el Firewall para Apache con los siguientes dos comandos:
+
 `````
 sudo ufw app list
 `````
 `````
 sudo ufw allow "Apache"
 `````
-6. Comprobar en nuestro navegador la siguiente dirección
-````
-https://localhost
-````
-Si hemos seguido los pasos habremos instalado correctamente Apache2 para Ubuntu
+6. Por último escribiremos en nuestro navegador: "https://localhost" y veremos lo siguiente:
 
 <br>
 <img src="../TEMA1/Imágenes/APACHE2.png"/>
