@@ -194,3 +194,60 @@ sudo /usr/lib/cgi-bin/awstats.pl -config=Dominio.com -output > /var/www/html/ind
 ````
 5. Se vería algo así:
 <img src="../TEMA1/Imágenes/STAT.png"/>
+
+### Segundo servidor
+1. Para esto usaremos Nginx:
+````
+sudo apt-get install nginx
+````
+(Hay el firewall con "sudo ufw allow 'Nginx HTTP'")
+
+2. Procederemos, ahora si, a la creacción de la carpeta que usaremos para nuestra web junto con el archivo de configuracion de nuestro dominio:
+````
+sudo mkdir /var/www/server2
+````
+````
+sudo nano /etc/nginx/sites-available/servidor2.centro.intranet
+````
+3. Dentro debemos escribir este código:
+````
+server {
+    listen 8080;
+    server_name server2.centro.intranet;
+
+    root /var/www/server2.centro.intranet;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location /phpmyadmin {
+        root /var/www/html;
+        index index.php;
+        try_files $uri $uri/ =404;
+
+        location ~ \.php$ {
+            include snippets/fastcgi-php.conf;
+            fastcgi_pass unix:/var/run/php/php8.1-fpm.sock; # Ajusta según tu versión de PHP
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+        }
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+````
+4. Configuraremos el host:
+````
+111.111.111.111 servidor2.centro.intranet
+````
+(Tenemos que reiniciar el servicio Nginx con "sudo service nginx restart")
+
+Por último activamos la web con:
+````
+sudo ln -s /etc/nginx/sites-available/servidor2.centro.intranet /etc/nginx/sites-enabled/
+````
+<img src="../TEMA1/Imágenes/ng.png"/>
