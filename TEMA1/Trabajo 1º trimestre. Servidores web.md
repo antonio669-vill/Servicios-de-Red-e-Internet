@@ -1,8 +1,10 @@
 ## Instalación del servidor web Apache
 ### Instalación de Apache en Ubuntu
 
-1. Abrimos una terminal
-
+1. Abrimos una terminal en Linux
+<br>
+<img src="../TEMA1/Imágenes/cmd.png"/>
+<br>
 2. Actualizamos los paquetes instalados
 `````
 sudo apt update
@@ -28,7 +30,5 @@ https://localhost
 ````
 Si hemos seguido los pasos habremos instalado correctamente Apache2 para Ubuntu
 <br>
-
 <img src="../TEMA1/Imágenes/APACHE2.png"/>
-
 <br>
