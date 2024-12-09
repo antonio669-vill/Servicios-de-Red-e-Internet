@@ -1,5 +1,5 @@
-## Instalación del servidor web Apache
-### Instalación de Apache en Ubuntu
+## Instalación de Apache y MySQL
+### Instalación de Apache
 
 1. Abrimos una terminal en Linux
 
@@ -26,8 +26,15 @@ sudo ufw app list
 `````
 sudo ufw allow "Apache"
 `````
-6. Por último escribiremos en nuestro navegador: "https://localhost" y veremos lo siguiente:
+4. Por último escribiremos en nuestro navegador: "https://localhost" y veremos lo siguiente:
 
 <br>
 <img src="../TEMA1/Imágenes/APACHE2.png"/>
 <br>
+
+### Instalación de MySQL
+1. Abrimos una terminal en Linux de nuevo
+2. Ahora instalaremos MySQL de la siguiente forma:
+`````
+sudo apt install mysql-server
+`````
