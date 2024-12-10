@@ -36,6 +36,7 @@ phpinfo
 <img src="../TEMA1/Imágenes/p.png"/>
 <img src="../TEMA1/Imágenes/listen.png"/>
 ### Crea un script que añada un nombre de dominio y una ip al fichero hosts. Debemos comprobar que no existe dicho dominio en el fichero hosts
+
 Primero, ingresamos en el directorio donde se encuentra el archivo de configuración correspondiente. Después, creamos y editamos un script que gestionará la inclusión del dominio y la IP. En el editor de texto, redactamos las instrucciones necesarias para que el script verifique si el dominio ya está configurado y, de no estarlo, realice una copia de seguridad y lo añada al archivo.
 Una vez finalizado, ejecutamos el script, comprobando que, si el dominio es nuevo, se ha realizado un respaldo del archivo y que tanto el dominio como la IP fueron añadidos correctamente. Finalmente, validamos que la operación haya tenido éxito revisando el archivo modificado.
 
