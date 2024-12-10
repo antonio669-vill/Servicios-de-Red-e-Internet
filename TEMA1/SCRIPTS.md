@@ -1,10 +1,40 @@
-### Creación de un script para añadir un puerto de escucha en la configuración de Apache
-Para comenzar, accedemos al directorio donde se encuentra la configuración de Apache
-cd /etc/apache2
-Y una vez dentro, procedemos a crear y editar un script que llevará a cabo las acciones necesarias. Al abrir el editor de texto, desarrollamos el contenido correspondiente.
-Tras escribir el script, ejecutamos el comando necesario, asegurándonos de estar posicionados correctamente en el sistema. Durante la ejecución, verificamos que, si el puerto no existe, primero se genera una copia de respaldo del archivo de configuración antes de añadir el puerto. Por último, revisamos el archivo para confirmar que la nueva configuración se haya aplicado exitosamente.
+### Crea un script que añada un puerto de escucha en el fichero de configuración de Apache. El puerto se recibirá como parámetro en la llamada y se comprobará que no esté ya presente en el fichero de configuración.
 
-Elaboración de un script para añadir un dominio y una IP al archivo hosts
+1. Para comenzar, accedemos al directorio donde se encuentra la configuración de Apache
+`````
+cd /etc/apache2
+`````
+2. Y una vez dentro, procedemos a crear y editar un script que llevará a cabo las acciones necesarias. Al abrir el editor de texto, desarrollaremos el contenido correspondiente.
+`````
+gedit NombreScript.sh
+`````
+`````
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+  echo 'Error'                     
+else
+  grep "$1" ports.conf             
+                                   
+
+  if [ $? -ne 0 ]; then            
+    cp ports.conf ports.bak        
+    echo "listen $1" >> ports.conf
+  else
+    echo 'Puerto configurado'
+  fi
+fi
+`````
+3. Tras escribir el script, ejecutamos este comando:
+`````
+bash NombreScript.sh NumeroPuerto
+phpinfo
+`````
+(por ejemplo, Actividad1.sh 300)
+
+4. Durante la ejecución si el puerto no existe, se genera una copia de respaldo del archivo de configuración antes de añadir el puerto, en el archivo llamado ports.conf
+
+### Crea un script que añada un nombre de dominio y una ip al fichero hosts. Debemos comprobar que no existe dicho dominio en el fichero hosts
 Primero, ingresamos en el directorio donde se encuentra el archivo de configuración correspondiente. Después, creamos y editamos un script que gestionará la inclusión del dominio y la IP. En el editor de texto, redactamos las instrucciones necesarias para que el script verifique si el dominio ya está configurado y, de no estarlo, realice una copia de seguridad y lo añada al archivo.
 Una vez finalizado, ejecutamos el script, comprobando que, si el dominio es nuevo, se ha realizado un respaldo del archivo y que tanto el dominio como la IP fueron añadidos correctamente. Finalmente, validamos que la operación haya tenido éxito revisando el archivo modificado.
 
