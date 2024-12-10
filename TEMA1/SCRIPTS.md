@@ -96,4 +96,5 @@ fi
 `````
 (Todo lo que va entre paréntesis es lo que deberemos modificar en función de lo que querramos poner en el html)
 2. Por último lo ejecutamos para comprobar que la página web se genera correctamente.
+
 <img src="../TEMA1/Imágenes/html.png"/>
