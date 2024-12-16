@@ -51,4 +51,23 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@
 `````
 flush privileges;
 `````
+![image](https://github.com/user-attachments/assets/ff703b07-1848-4a73-b3e7-c9dfdf2ec71b)
+4. Entramos en la base de datos y creamos una tabla:
+`````
+use defaultsite_db;
+`````
+![image](https://github.com/user-attachments/assets/5959f5bc-4957-437e-815d-d950665add98)
+`````
+create table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );
+`````
+![image](https://github.com/user-attachments/assets/e1bd2113-ca2e-4fa1-be82-ae193689c365)
+
+5. Para autentificar el usuario convertimos la contraseña en hash y luego insertaremos los datos de la tabla
+`````
+htpasswd -bns siteuser siteuser
+`````
+![image](https://github.com/user-attachments/assets/b2f8394b-d964-4787-a31c-325fae671948)
+
+6. 
+
 # Crear un certificado autofirmado y activar el módulo SSL
