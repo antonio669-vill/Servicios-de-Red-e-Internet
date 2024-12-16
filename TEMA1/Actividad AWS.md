@@ -96,6 +96,8 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 3. Volmemos a configurar apache con "sudo nano /etc/apache2/sites-available/000-default.conf" y escribimos lo siguiente:
 ![image](https://github.com/user-attachments/assets/67363776-57fa-4b49-95e3-2dec5790c0de)
+
 (Reiniciaremos Apache de nuevo con "sudo apache2ctl configtest" y "sudo systemctl reload apache2")
+![image](https://github.com/user-attachments/assets/14b713ca-5a0e-4e24-94ff-3494765e8ba1)
 
 4. Y con esto abremos terminado.
