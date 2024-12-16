@@ -9,6 +9,9 @@ sudo apt upgrade
 `````
 sudo apt-get install apache2
 `````
+<br>
+<img src="../TEMA1/Imágenes/apa.png"/>
+<br>
 # Activar la autenticación con MySql
 1. Instalamos PHP, MySQL y MariaDB.
 `````
@@ -26,6 +29,3 @@ sudo mysql -u root -p
 create database defaultsite_db;
 `````
 # Crear un certificado autofirmado y activar el módulo SSL
-<br>
-<img src="../TEMA1/Imágenes/CMD.png"/>
-<br>
