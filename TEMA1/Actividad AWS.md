@@ -75,6 +75,13 @@ INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{S
 `````
 ![image](https://github.com/user-attachments/assets/efd57b9e-83d2-4ecb-87ba-87f03578d01a)
 
-7. 
+7. Salimos con "ctrl + z" y activamos todos los módulos con los comandos que se ven en la imagen:
+![image](https://github.com/user-attachments/assets/da5d43b4-1510-4192-bf94-a457d13d5643)
+
+8. Por último "sudo mkdir /var/www/html/protecteddir" y "sudo chown -R www-data:www-data /var/www/html/protecteddir" y terminamos de configurar apache abriendp ("sudo nano /etc/apache2/sites-available/000-default.conf"):
+![image](https://github.com/user-attachments/assets/0e3508cf-a0f2-4f08-97eb-1b5b248554b8)
+
+![image](https://github.com/user-attachments/assets/c7d43d0a-505b-4bb8-99e4-dde1bee1a0a3)
+
 
 # Crear un certificado autofirmado y activar el módulo SSL
