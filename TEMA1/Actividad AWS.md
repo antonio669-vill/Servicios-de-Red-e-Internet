@@ -83,5 +83,16 @@ INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{S
 
 ![image](https://github.com/user-attachments/assets/c7d43d0a-505b-4bb8-99e4-dde1bee1a0a3)
 
-
 # Crear un certificado autofirmado y activar el módulo SSL
+1. Para esto abriremos los puertos http y https junto con la activación del modulo SSL, tal y como vemos a continuación:
+![image](https://github.com/user-attachments/assets/924e5fef-1893-4610-9acd-a7b3213e61c4)
+(Reiniciamos apache)
+
+2. Ahora creamos el certificado y nos pediran algunos datos:
+`````
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+`````
+![image](https://github.com/user-attachments/assets/61df5e59-5f25-4cf9-9023-56fdeb88a0bf)
+
+3. Volmemos a configurar apache con "sudo nano /etc/apache2/sites-available/000-default.conf" y escribimos lo siguiente:
+4. 
