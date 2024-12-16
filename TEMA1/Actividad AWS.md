@@ -68,6 +68,13 @@ htpasswd -bns siteuser siteuser
 `````
 ![image](https://github.com/user-attachments/assets/b2f8394b-d964-4787-a31c-325fae671948)
 
-6. 
+6. Abriremos de nuevo nuestra base de datos con ("sudo mysql -u root -p" y "use defaultsite_db") y escribilos los datos de la tabla:
+
+`````
+INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');
+`````
+![image](https://github.com/user-attachments/assets/efd57b9e-83d2-4ecb-87ba-87f03578d01a)
+
+7. 
 
 # Crear un certificado autofirmado y activar el módulo SSL
