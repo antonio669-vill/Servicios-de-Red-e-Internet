@@ -4,5 +4,5 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 ## Tema 1 - servidores web
 |Nº de ejercicio  |Descripción   |
 |---|---|
-|Ejercicio 1   | [Scripts](./TEMA1/SCRIPTS.md)|
-|Ejercicio 2   |   |
+|[Scripts](./TEMA1/SCRIPTS.md)   | Actividades de scripts|
+|[Trabajo 1º trimestre.Servidores web](./TEMA1/Trabajo 1º trimestre.Servidores web.md |   |
