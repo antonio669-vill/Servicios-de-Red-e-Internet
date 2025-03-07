@@ -13,4 +13,4 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 ## Tema 5 - servidores web
 |Nº de ejercicio  |Descripción   |
 |---|---|
-|[Actividad AWS](./TEMA2/Wordpress_AWS.md)|Enlace Wordpress AWS|
+|[Actividad AWS](./TEMA3/Wordpress_AWS.md)|Enlace Wordpress AWS|
