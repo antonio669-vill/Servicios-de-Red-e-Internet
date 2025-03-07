@@ -246,8 +246,12 @@ FLUSH PRIVILEGES;
 <img src="../TEMA3/Imágenes/36.PNG"/>
 <br>
 
-Y ya podemos acceder a Wordpress desde el navegador.
-
+Podemos comprobar que esta activo con:
+```
+sudo systemctl status apache2
+```
 <br>
 <img src="../TEMA3/Imágenes/37.PNG"/>
 <br>
+
+Y ya podemos acceder a Wordpress desde el navegador.
