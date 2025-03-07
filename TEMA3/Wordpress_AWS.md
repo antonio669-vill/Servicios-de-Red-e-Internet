@@ -9,6 +9,100 @@ En mi caso usare una creada anteriormente con la IP `10.2.0.0/16` y con los sigu
 ![image](https://github.com/user-attachments/assets/e6213023-5289-426b-be43-3ea69796ee5f)
 
 ## EC2
-Entramos en EC2 desde AWS y lanzamos una instancia
+Entramos en EC2 desde AWS y lanzamos una instancia a la que he llamado "Wordpress" y el Sistema Operativo es Ubuntu en su versión más reciente:
 
+<br>
+<img src="../TEMA3/Imágenes/1.PNG"/>
+<br>
 
+Tendremos que poner esta configuración, usaremos la clave `vockey` y **LO MÁS IMPORTANTE** elegir la VPC que usaremos para esta práctica ('SREIpractica1' en mi caso). Por último agregar una regla para permitir HTTP desde cualquier origen.
+
+<br>
+<img src="../TEMA3/Imágenes/2.PNG"/>
+<br>
+
+Terminamos de configurarla:
+
+<br>
+<img src="../TEMA3/Imágenes/3.PNG"/>
+<br>
+
+Y ya sea con Putty o con la opción de "Conectar" de AWS (esta última es la opción que yo he elegido) entramos:
+
+<br>
+<img src="../TEMA3/Imágenes/4.PNG"/>
+<br>
+
+## Apache y PHP
+Actualizamos el sistema como lo hariamos en cualquier maquina ubuntu.
+```
+sudo apt update
+```
+```
+sudo apt upgrade -y
+```
+<br>
+<img src="../TEMA3/Imágenes/5.PNG"/>
+<br>
+<br>
+<img src="../TEMA3/Imágenes/6.PNG"/>
+<br>
+
+E instalarmos Apache con el siguiente comando:
+```
+sudo apt install apache2 -y
+```
+<br>
+<img src="../TEMA3/Imágenes/7.PNG"/>
+<br>
+
+La forma de iniciar Apache y usarlo es con los comandos:
+```
+sudo systemctl start apache2
+sudo systemctl enable apache2
+```
+
+<br>
+<img src="../TEMA3/Imágenes/8.PNG"/>
+<br>
+
+Y cuando pongamos la IP de nuestra instancia en el navegador veremos que se instalo correctamente:
+
+<br>
+<img src="../TEMA3/Imágenes/9.PNG"/>
+<br>
+
+Ahora, para instalar PHP:
+```
+sudo add-apt-repository ppa:ondrej/php
+```
+```
+sudo apt install php7.4 libapache2-mod-php7.4 php7.4-cli php7.4-mysql -y
+```
+<br>
+<img src="../TEMA3/Imágenes/10.PNG"/>
+<br>
+<br>
+<img src="../TEMA3/Imágenes/11.PNG"/>
+<br>
+<br>
+<img src="../TEMA3/Imágenes/12.PNG"/>
+<br>
+
+Reiniciar Apache:
+```
+sudo systemctl restart apache2
+```
+<br>
+<img src="../TEMA3/Imágenes/14.PNG"/>
+<br>
+
+## RDS
+
+Nos dirigimos a RDS para crear la base de datos:
+
+![image](https://github.com/user-attachments/assets/2d04284d-2dc9-4491-b9ce-daa21a6d2f15)
+
+<br>
+<img src="../TEMA3/Imágenes/15.PNG"/>
+<br>
