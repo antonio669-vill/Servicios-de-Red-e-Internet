@@ -9,3 +9,6 @@ En mi caso usare una creada anteriormente con la IP `10.2.0.0/16` y con los sigu
 ![image](https://github.com/user-attachments/assets/e6213023-5289-426b-be43-3ea69796ee5f)
 
 ## EC2
+Entramos en EC2 desde AWS y lanzamos una instancia
+
+
