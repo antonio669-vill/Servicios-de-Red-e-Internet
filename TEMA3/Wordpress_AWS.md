@@ -151,10 +151,103 @@ Buscamos EFS en AWS y seleccionamos "Crear sistema de archivos", debemos asignar
 <img src="../TEMA3/Imágenes/23.PNG"/>
 <br>
 
+Elegimos nuestra instancia:
+
 <br>
 <img src="../TEMA3/Imágenes/24.PNG"/>
 <br>
 
+Deberemos editar las reglas de entrada y la configuramos tal que así:
+
 <br>
 <img src="../TEMA3/Imágenes/25.PNG"/>
+<br>
+
+<br>
+<img src="../TEMA3/Imágenes/26.PNG"/>
+<br>
+
+Y en EFS ponemos nuestra VPC.
+
+<br>
+<img src="../TEMA3/Imágenes/27.PNG"/>
+<br>
+
+Ahora le damos a "Asociar"
+
+<br>
+<img src="../TEMA3/Imágenes/28.PNG"/>
+<br>
+
+Lo configuramos como lo vemos en la foto de abajo y copiamos el comando que se marca en la misma imagen:
+
+<br>
+<img src="../TEMA3/Imágenes/29.PNG"/>
+<br>
+
+Instalamos NFS con 'sudo apt install nfs-common -y'. Por último montamos el sistema de archivos EFS:
+
+```
+sudo mkdir -p efs
+```
+```
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport <IP_EFS>:/ efs
+```
+<br>
+<img src="../TEMA3/Imágenes/30.PNG"/>
+<br>
+
+<br>
+<img src="../TEMA3/Imágenes/31.PNG"/>
+<br>
+
+
+## Instalación de WordPress
+Descargarmos WordPress y descomprimirlo con:
+```
+sudo wget http://wordpress.org/latest.tar.gz
+```
+```
+sudo tar -xf latest.tar.gz
+```
+<br>
+<img src="../TEMA3/Imágenes/32.PNG"/>
+<br>
+
+<br>
+<img src="../TEMA3/Imágenes/33.PNG"/>
+<br>
+
+Ahora instalamos el cliente de MySQL:
+
+```
+sudo apt install mysql-client -y
+```
+<br>
+<img src="../TEMA3/Imágenes/34.PNG"/>
+<br>
+
+Abrimos MySQL:
+
+<br>
+<img src="../TEMA3/Imágenes/35.PNG"/>
+<br>
+
+Y creamos las base de datos:
+```
+mysql -h <endpoint_RDS> -u admin -p
+CREATE DATABASE wordpress;
+CREATE USER 'wordpress_user'@'%' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress_user'@'%';
+FLUSH PRIVILEGES;
+```
+
+<br>
+<img src="../TEMA3/Imágenes/36.PNG"/>
+<br>
+
+Y ya podemos acceder a Wordpress desde el navegador.
+
+<br>
+<img src="../TEMA3/Imágenes/37.PNG"/>
 <br>
