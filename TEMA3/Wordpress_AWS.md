@@ -255,3 +255,6 @@ sudo systemctl status apache2
 <br>
 
 Y ya podemos acceder a Wordpress desde el navegador.
+
+![Wordpress](https://github.com/user-attachments/assets/9b40bc88-4de0-4d63-b748-736cb10b227e)
+
