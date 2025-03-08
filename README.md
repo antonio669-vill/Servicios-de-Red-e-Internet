@@ -10,7 +10,12 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 |[Actividad AWS](./TEMA1/Actividad_AWS.md)|Enlace a la práctica AWS|
 
 ## 2º Trimestre
+## Tema 2 - DNS
+|Nº de ejercicio  |Descripción   |
+|---|---|
+|[Wordpress AWS](./TEMA2/1ºActividadDNS.md)|Enlace a la primera actividad de DNS|
 ## Tema 3 - servidores web
 |Nº de ejercicio  |Descripción   |
 |---|---|
 |[Wordpress AWS](./TEMA3/Wordpress_AWS.md)|Enlace Wordpress AWS|
+
