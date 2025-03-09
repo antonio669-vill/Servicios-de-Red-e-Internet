@@ -1,4 +1,4 @@
-## DOCKER #2
+## DOCKER #3
 Para descargar una imagen usamos este comando:
 ```
 sudo docker pull ubuntu
