@@ -14,7 +14,7 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 |Nº de ejercicio  |Descripción   |
 |---|---|
 |[Caching & Fordwarding](./TEMA2/1ºActividadDNS.md)|Enlace a la primera actividad de DNS|
-## Tema 3 - servidores web
+## Tema 3 - Amazon AWS
 |Nº de ejercicio  |Descripción   |
 |---|---|
 |[Wordpress AWS](./TEMA3/Wordpress_AWS.md)|Enlace Wordpress AWS|
