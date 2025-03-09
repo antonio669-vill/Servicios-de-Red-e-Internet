@@ -14,6 +14,8 @@ Este repositorio incluye actividades llevadas a cabo en el módulo
 |Nº de ejercicio  |Descripción   |
 |---|---|
 |[Caching & Fordwarding](./TEMA2/1ºActividadDNS.md)|Enlace a la primera actividad de DNS|
+|[Master DNS](./TEMA2/2ºActividadDNS.md)|Enlace a la segunda actividad de DNS|
+|[Subdominio](./TEMA2/3ºActividadDNS.md)|Enlace a la primera actividad de DNS|
 ## Tema 3 - Amazon AWS
 |Nº de ejercicio  |Descripción   |
 |---|---|
