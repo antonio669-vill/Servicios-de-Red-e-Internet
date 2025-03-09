@@ -1,6 +1,5 @@
 # Master DNS
-## Paso 1: Configurar la Zona Directa
-Abrimos el archivo de configuración de BIND con este comando:
+Empezamos creando zona directa. Para ello, abrimos el archivo de configuración de BIND con este comando:
 
 ```
 sudo nano /etc/bind/named.conf.local
