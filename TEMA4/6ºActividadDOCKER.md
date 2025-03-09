@@ -183,7 +183,7 @@ Ejecutamos:
 $ docker build -t josedom24/ejemplo3:v3 .
 ```
 ```
-$ docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo3:v3
+$ docker run -d -p 80:80 --name ejemplo3 josedom24/ejemplo3:v3
 ```
 
 Comprobamos poniendo "localhost:80":
