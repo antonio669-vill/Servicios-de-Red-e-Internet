@@ -1,3 +1,4 @@
+# Master DNS
 ## Paso 1: Configurar la Zona Directa
 Abrimos el archivo de configuración de BIND con este comando:
 
