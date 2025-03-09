@@ -258,9 +258,5 @@ Y ya podemos acceder a Wordpress desde el navegador.
 
 ![Wordpress](https://github.com/user-attachments/assets/9b40bc88-4de0-4d63-b748-736cb10b227e)
 
-![image](https://github.com/user-attachments/assets/b9aec791-871d-4ad1-9079-d05875540055)
-
-![image](https://github.com/user-attachments/assets/d968ca33-6b3c-43b1-b664-22b1a5346dc9)
-
 
 
